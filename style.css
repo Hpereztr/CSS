@@ -1,0 +1,239 @@
+/* REGLAS CSS */
+/* selector{
+  propiedad:valor;
+  propiedad:valor;
+  propiedad:valor;
+  propiedad:valor;
+} */
+
+
+body {
+  background-color: #333;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #333;
+  border: 10px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: orange;
+  font-size: 40px;
+}
+
+/* --------------------------------------------------- */
+
+/* contenido principal */
+main {
+  padding: 20px;
+}
+
+/* --------------------------------------------------- */
+
+/* SELECTOR DE TIPO: Cuando lo puedo utilizar? Es recomendable utilizarlo cuando debemos seleccionar un conjunto de etiquetas similares, como ventaja es muy rapido de hacerlo, pero como desventaja podemos terner problema de especificidad */
+
+section {
+  color: aliceblue;
+  margin: 20px 0 20px 0;
+  /*       t   r  b   l */
+  margin: 20px 0;
+  padding: 30px;
+  padding: 30px 10px;
+  padding: 30px 10px 25px 8px;
+  padding-top: 30px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+
+
+  border: 2px solid wheat;
+}
+
+p {
+  color: red;
+}
+
+p {
+  color: blue;
+  color: red;
+  color: burlywood;
+}
+
+
+/* Selector de CLASS: (.)  Este selector me permite reutulizar una regla CSS, este atributo estara modificado la etiqueta HTML en la que se lo aplique. Para seleccionar una clase en CSS, debo usar el .*/
+
+.txt-primary {
+  color: lightcoral;
+}
+
+.txt-secondary {
+  color: lightskyblue;
+}
+
+.txt-small {
+  font-size: 12px;
+}
+
+.fermin {
+  font-size: 10px;
+}
+
+.txt-big {
+  font-size: 28px;
+}
+
+
+/* Seleccion por id: (#), los identificadores son unicos, no permitimos que haya dos identificadores con el mismo id. Los id estan asociados al uso de JS */
+
+#capitulo1 {
+  border: 10px solid black;
+}
+
+/* Aplicaremos una regla CSS, a varios elementos HTML */
+
+h2,
+h3,
+h4 {
+  font-size: 35px;
+  background-color: black;
+  text-align: center;
+  border-radius: 70px;
+  padding: 15px 0;
+
+}
+
+
+/* SELECTORES COMBINADOS */
+
+/* Selector de descencia (ESPACIO EN BLANCO) */
+
+.padre .hijo {
+  color: aqua;
+}
+
+/* Selector de hijo directo (>) */
+
+.hijo>span {
+  color: lightgray;
+}
+
+
+
+/* Selecotres de hermnaos */
+
+/* selector adyacente (+) */
+
+h2+p {
+  background-color: black;
+  color: lightskyblue;
+}
+
+/* selector general(~) */
+h2~p {
+  text-decoration: underline lightblue;
+}
+
+
+/* Seleccion por atributo */
+[href="https://www.academlo.com/"] {
+  background-color: red
+}
+
+[href="https://www.notion.so/G33-Fundamentos-HTML-CSS-y-JS-aa5b25dcf32846a0a39a1f71b66bfa0d"] {
+  background-color: blue;
+  color: white;
+}
+
+
+[href="https://cssreference.io/"] {
+  background-color: yellow;
+  color: black;
+}
+
+[href ^='https'] {
+  /* que comience con: ^ */
+  padding-left: 10px;
+  background-color: transparent;
+}
+
+[href $='/'] {
+  /* que termine con: $ */
+  color: red;
+}
+
+[href *='/'] {
+  /* que contenga un cierto patron */
+  color: lightblue;
+}
+
+
+/* pseudo clases, son estados que contienen algunos elementos HTML */
+
+
+h1 {
+  padding: 15px;
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 25px;
+}
+
+h1:hover {
+  cursor: pointer;
+  background-color: wheat;
+  color: black !important;
+}
+
+
+/* pseudo - elementos */
+/* Le estoy indicando al navegaor que agregue ciertos elementos */
+
+
+[href *='/']::before {
+  content: '🔗 ';
+}
+
+
+[href *='/']::after {
+  content: ' 😎';
+}
+
+
+::selection {
+  background-color: #fff;
+  color: red;
+}
+
+/* personalizacion de la barra de scroll con pseudo elementos */
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button:increment,
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ff0606;
+  border-radius: 20px;
+  border: 2px solid #333;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: black;
+}

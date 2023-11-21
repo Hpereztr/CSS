@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduccion a CSS</title>
+
+  <style>
+    /* regla CSS: selector{
+      propiedad:valor;
+    } */
+    header {
+      background-color: #333;
+      border: 10px solid black;
+      padding: 20px;
+    }
+
+    h1 {
+      color: orange;
+      font-size: 40px;
+    }
+  </style>
+
+  <!-- la forma mas recomendable de trabajar en css , es con  la opción 3,  (hoja de estilos en cascada) -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+  <!-- Tenemos tres formas de agregar css a nuestro documento:
+    1-Estilos en linea
+    2-Etiqueta style
+    3- Con hoja de estilos en cascada
+  
+  -->
+
+  <!-- 1-Encabezado con estilos en línea -->
+  <header style="background-color: #333; border: 10px solid black; padding: 20px;">
+    <h1 style="color: orange; font-size: 40px;">Introducción a CSS</h1>
+  </header>
+
+
+  <br><br><br>
+
+  <!-- 2- Con etiqueta style -->
+  <header>
+    <h1>Introducción a CSS</h1>
+  </header>
+
+  <br><br><br>
+
+  <!-- 3- Con hoja de estilos externa-->
+  <header>
+    <h1>Introducción a CSS</h1>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Sección 1 -->
+    <section id="capitulo1">
+      <p class="txt-primary txt-small section__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ea
+        facilis,
+        tenetur ab
+        vel cumque aperiam
+        dignissimos repellat nobis! Exercitationem sequi dolorum, quibusdam ratione culpa odit dolor ex neque voluptas
+        enim laboriosam illo sunt aspernatur porro esse minima quae non.</p>
+    </section>
+
+    <!-- Sección 2 -->
+    <section>
+      <p class="txt-secondary txt-big fermin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cumque
+        veritatis
+        laboriosam blanditiis
+        asperiores at. Veritatis rerum molestiae optio sit harum nostrum atque! Ab, dicta. Vitae, recusandae. Blanditiis
+        neque, facere in repellendus commodi voluptatum cum quibusdam eaque atque officia iusto aperiam quaerat
+        reiciendis vitae! Quia eveniet dolorum exercitationem tenetur debitis.</p>
+
+      <!-- Lista -->
+      <ul class="padre">
+        <li class="hijo ul__li--unico">Element <span>#1</span></li>
+        <li class="hijo ul__li--unico2">Element <span>#2</span></li>
+        <li class="hijo">Element <span>#3</span></li>
+      </ul>
+    </section>
+
+    <!-- Sección 3 -->
+    <section>
+      <!-- Títulos y párrafos -->
+      <h2>Hermanos Adyacentes</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, nam ullam vero molestias reiciendis odio
+        ad doloribus dolore pariatur ex!</p>
+      <h3>Hermanos Generales</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a, quia repellendus hic ipsam tempora!
+        Consectetur vel dicta eos consequuntur?</p>
+      <h4>Hermanos de atributos</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam a, quia repellendus hic ipsam tempora!
+        Consectetur vel dicta eos consequuntur?</p>
+
+      <!-- Enlaces -->
+      <ul>
+        <li><a href="https://www.academlo.com/">Home Academlo</a></li>
+        <li><a href="https://www.notion.so/G33-Fundamentos-HTML-CSS-y-JS-aa5b25dcf32846a0a39a1f71b66bfa0d">Notion
+            G33</a></li>
+        <li><a href="https://cssreference.io/">cssreferences</a></li>
+        <li><a href="">sin def1</a></li>
+        <li><a href="">sin def2</a></li>
+        <li><a href="">sin def3</a></li>
+        <li><a href="">sin def4</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Espaciado adicional -->
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>
